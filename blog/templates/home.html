@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+
+{%block content%}
+ 
+    <h1>News</h1>
+    <br><br>
+    
+    {%for blog in blogs%}
+        <h3><a style="color: blue; cursor:pointer;text-decoration: none;" href="/blog-detail/{{blog.id}}">{{blog.title}}</a></h3>
+        <hr>
+    {%endfor%}
+
+
+    
+
+    <br><br><br><br>
+{%endblock%}
